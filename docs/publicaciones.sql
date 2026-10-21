@@ -3,7 +3,7 @@
 -- Proyecto EC3 - Programación II (UCSUR)
 -- =====================================================
 
-DROP DATABASE IF EXISTS publicaciones;
+-- DROP DATABASE IF EXISTS publicaciones;
 
 CREATE DATABASE publicaciones
     CHARACTER SET utf8mb4
