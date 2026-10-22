@@ -3,6 +3,8 @@ package pe.cientifica.backend.controller;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import pe.cientifica.backend.dto.LoginRequest;
+import pe.cientifica.backend.dto.LoginResponse;
 import pe.cientifica.backend.dto.RegistroRequest;
 import pe.cientifica.backend.service.AuthService;
 
@@ -20,5 +22,10 @@ public class AuthController {
     @ResponseStatus(HttpStatus.CREATED)
     public void registro(@Valid @RequestBody RegistroRequest request) {
         authService.registrar(request);
+    }
+
+    @PostMapping("/login")
+    public LoginResponse login(@Valid @RequestBody LoginRequest request) {
+        return authService.login(request);
     }
 }
