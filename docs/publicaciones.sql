@@ -3,7 +3,7 @@
 -- Proyecto EC3 - Programación II (UCSUR)
 -- =====================================================
 
--- DROP DATABASE IF EXISTS publicaciones;
+DROP DATABASE IF EXISTS publicaciones;
 
 CREATE DATABASE publicaciones
     CHARACTER SET utf8mb4
@@ -122,3 +122,6 @@ INSERT INTO categoria (nombre, descripcion) VALUES
 SHOW TABLES;
 SELECT * FROM sede;
 SELECT * FROM categoria;
+
+SELECT correo, contrasena FROM usuario;
+DELETE FROM usuario WHERE correo = 'prueba@cientifica.edu.pe';
