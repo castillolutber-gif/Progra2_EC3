@@ -123,5 +123,3 @@ SHOW TABLES;
 SELECT * FROM sede;
 SELECT * FROM categoria;
 
-SELECT correo, contrasena FROM usuario;
-DELETE FROM usuario WHERE correo = 'prueba@cientifica.edu.pe';
