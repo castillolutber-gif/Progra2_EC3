@@ -122,4 +122,4 @@ INSERT INTO categoria (nombre, descripcion) VALUES
 SHOW TABLES;
 SELECT * FROM sede;
 SELECT * FROM categoria;
-
+SELECT * FROM usuario;
